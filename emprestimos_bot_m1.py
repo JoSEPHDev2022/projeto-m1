@@ -1,13 +1,3 @@
-def sair():
-    opcao1 = str(input('Se quiser voltar ao menu digite: "voltar"\nSe quiser Sair do programa digite: "sair"\n'))
-    if opcao1 == 'voltar':
-        emprestimo()
-    if opcao1== 'sair':
-        exit()
-    else:
-        print('Digite uma opção válida.')
-        sair()
-
 def emprestimo():
     print(' Seja bem vindo ao menu de Emprestimos, no que podemos ajudar hoje? ')
     print('1) Empréstimo Consignado ')
@@ -25,11 +15,15 @@ def emprestimo():
         print('Para fazer um empréstimo você, \nprecisa ser maior de 18 anos, ter documentos pessoais válidos, \ncomo RG e CPF e apresentar comprovante de renda  e de residência.' )
         sair()  
     if opcao == 4:
-        exit()
+        sair()
+
+def sair():
+    opcao1 = str(input('Deseja voltar ao menu principal? digite: sair '))
+    if opcao1 == 'sair':
+        emprestimo()
     else:
         print('Digite uma opção válida.')
-        emprestimo()        
-
+        sair()
 
 emprestimo()
 

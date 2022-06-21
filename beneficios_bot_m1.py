@@ -3,7 +3,9 @@ def beneficios():
     print('2 - Promoções e descontos')
     print('3 - Cashback com pontos')
     print('4 - Voltar ao menu anterior')
+
     escolha=int(input('escolha a opção desejada'))
+    
     if escolha == 1:
         print('Os clientes da M$M possuem entradas para eventos exclusivos e descontos e prioridade. Consulte as condicoções em :www.mmfinanceira.com/BeneficiosEventos')
     if escolha == 2:

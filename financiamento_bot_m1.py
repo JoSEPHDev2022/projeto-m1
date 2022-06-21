@@ -1,4 +1,5 @@
 # FINANCIAMENTO - David Lima
+from telainicial import inicio
 
 def financiamentos():
 
@@ -16,7 +17,7 @@ def financiamentos():
         elif opção == '3':
             f_condições()
         elif opção == '4':
-            return f_principal()
+            return inicio()
 def sair():
     print('Você saiu do sistema')
     exit()
@@ -33,7 +34,7 @@ def f_estudantil():
         if opção == '1':
             return sair()
         elif opção == '2':
-            return f_principal()
+            return inicio()
 
 def f_imob():
     while True:
@@ -47,7 +48,7 @@ def f_imob():
         if opção == '1':
             return sair()
         elif opção == '2':
-            return f_principal()
+            return inicio()
 
 def  f_condições():
     while True:
@@ -60,20 +61,6 @@ def  f_condições():
         if opção == '1':
             return sair()
         elif opção == '2':
-            return f_principal()
+            return inicio()
             
-def f_principal():
-    while True:
-        print('-'*130)
-        print('Para iniciar o atendimento digite um dos números correspondentes às opções abaixo:')
-        print('-'*130)
-        opção = input('O que você deseja?\n'
-        '1 - FINANCIAMENTO\n'
-        '2 - SAIR\n'
-        'Digite sua opção aqui: ' )
-        if opção == '1':
-            financiamentos()
-        elif opção == '2':
-            break
-    print('Você saiu do sistema.')
-f_principal()
+
