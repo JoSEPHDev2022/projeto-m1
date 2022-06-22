@@ -9,30 +9,32 @@ def saida_ben():
     
 def beneficios():
     while True:
-        print('1 - Vantagens em eventos')
-        print('2 - Promoções e descontos')
-        print('3 - Cashback com pontos')
-        print('4 - Voltar ao menu anterior')
-        escolha=int(input('escolha a opção desejada: '))
+        print('Bem vindo ao menu de Benefícios! No que posso ajudar?'.center(130, '-'))
+        print('\n1) Vantagens em eventos')
+        print('2) Promoções e descontos')
+        print('3) Cashback com pontos')
+        print('4) Voltar ao menu anterior')
+        escolha=int(input('\nDigite a opção desejada: '))
         if escolha == 1:
-            print('Os clientes da M$M possuem entradas para eventos exclusivos, descontos e prioridade nas compras. Consulte as condicoções em :www.mmfinanceira.com/BeneficiosEventos')
+            print('\n Os clientes da M$M possuem entradas para eventos exclusivos, descontos e prioridade nas compras.\n Consulte as condicoções em : www.mmfinanceira.com/BeneficiosEventos\n')
             saida_ben()
         if escolha == 2:
-            print('Tenha escontos exclusivos em shows, viagens, hospedagens e restaurantes. Participe também de promoções e sorteios mensais.')
+            print('\n Tenha escontos exclusivos em shows, viagens, hospedagens e restaurantes. Participe também de promoções e sorteios mensais.\n')
             saida_ben()
         if escolha == 3:
-            print('Para os amantes de cashback, nós temos sim! Cadastre seu cpf e utilize nas compras das empresas parceiras e aproveite!')
+            print('\n Para os amantes de cashback, nós temos sim! Cadastre seu cpf e utilize nas compras das empresas parceiras e aproveite!\n')
             saida_ben()
         else: 
             break
 
 def fale_conosco():
     while True:
-        escolha2 = int(input('\nComo posso ajudar nesse caso?\n 1. Contato\n 2. App M&M\n 3. Encontre Agências\n 4. Retorne ao início\n Escolha: '))
+        print('Sessão Fale Conosco. No que posso ajudar?'.center(130, '-'))
+        escolha2 = int(input('\n1) Contato\n2) App M&M\n3) Encontre Agências\n4) Retorne ao início \n\nDigite a opção desejada: '))
         if escolha2 == 4:
             break
         elif escolha2 == 1:
-            print('\nVocê pode nos contatar por essas vias:\n  Central de atendimento: 0800 123 321 (segunda a sexta das 08:00 às 18:00\n  e-mail: suporte@mmfinanceira.com.br\n')
+            print('\n Você pode nos contatar por essas vias:\n\n  Central de atendimento: 0800 123 321 (segunda a sexta das 08:00 às 18:00)\n  e-mail: suporte@mmfinanceira.com.br\n')
             opcoes_saida = int(input(' 1. Sair\n 2. Retornar ao início\n Escolha:'))
             if opcoes_saida == 1:
                 print("Foi um prazer ajudar!")
@@ -40,7 +42,7 @@ def fale_conosco():
             elif opcoes_saida == 2:
                 break
         elif escolha2 == 2:
-            print('\nBaixe o nosso app e tenha o seu serviço disponível na palma da sua mão!\n  Disponível para Androis, IOS e Windows: www.mmfinanceira.com/App\n')
+            print('\n Baixe o nosso app e tenha o seu serviço disponível na palma da sua mão!\n  Disponível para Androis, IOS e Windows: www.mmfinanceira.com/App\n')
             opcoes_saida = int(input(' 1. Sair\n 2. Retornar ao início\n Escolha: '))
             if opcoes_saida == 1:
                 print("Foi um prazer ajudar!")
@@ -48,7 +50,7 @@ def fale_conosco():
             elif opcoes_saida == 2:
                 break
         elif escolha2 == 3:
-            print('\nEncontre um de nossos respresentantes mais perto de você pelo "M&M perto de você!"\n  Acesse em: www.mmfinanceira.com/Pertodevoce\n')
+            print('\n Encontre um de nossos respresentantes mais perto de você pelo "M&M perto de você!"\n Acesse em: www.mmfinanceira.com/Pertodevoce\n')
             opcoes_saida = int(input(' 1. Sair\n 2. Retornar ao início\n Escolha: '))
             if opcoes_saida == 1:
                 print("Foi um prazer ajudar!")
@@ -58,12 +60,13 @@ def fale_conosco():
 
 def financiamentos():
     while True:
-        opção = input('Você escolheu a opção FINANCIAMENTO. O que deseja?\n'
-        '1 - FINANCIAMENTO ESTUDANTIL\n'
-        '2 - FINANCIAMENTO IMOBILIÁRIO\n'
-        '3 - CONDIÇÕES DE FINANCIAMENTO\n'
-        '4 - RETORNAR AO INÍCIO\n'
-        'Digite sua opção aqui: ')
+        print('Você escolheu a opção de Financiamento. O que deseja?'.center(130, '-'))
+        opção = input(
+        '\n1) Financiamento Estudantil.\n'
+        '2) Financiamento Imobiliário\n'
+        '3) Condições de Financiamento\n'
+        '4) Retornar ao início\n'
+        '\nDigite a opção desejada: ')
         if opção == '1':
             f_estudantil()
         elif opção == '2':
@@ -75,13 +78,12 @@ def financiamentos():
 
 def f_estudantil():
     while True:
-        print('Você escolheu a opção FINANCIAMENTO ESTUDANTIL. Ao solicitar o financiamento estudantil\n'
-        'você receberá o crédito no valor das parcelas do curso que será repassado diretamente para\n'
-        'a instituição d ensino\n')
-        opção = input('Digite 1 para sair ou 2 para retornar ao início.\n'
+        print('\n Ao solicitar o financiamento estudantil você receberá o crédito no valor das parcelas do curso, que será repassado diretamente para\n'
+        ' a instituição de ensino\n')
+        opção = input(
         '1 - Sair\n'
         '2 - Retornar ao início\n'
-        'Digite sua opção aqui: ')
+        '\nDigite sua opção aqui: ')
         if opção == '1':
             print("Foi um prazer ajudar!")
             exit()
@@ -90,13 +92,12 @@ def f_estudantil():
 
 def f_imob():
     while True:
-        print('Você escolheu a opção FINANCIAMENTO IMOBILIÁRIO. Ao solicitar o financiamento imobiliário\n'
-        'você terá o valor disponível para comprar um imóvel, especificamente, seja para fim comercial\n'
-        'ou resindecial\n')
-        opção = input('Digite 1 para sair ou 2 para retornar ao início.\n'
+        print('\n Ao solicitar o financiamento imobiliário você terá o valor disponível para comprar um imóvel, especificamente, seja para fins comerciais\n'
+        ' ou resindeciais\n')
+        opção = input(
         '1 - Sair\n'
         '2 - Retornar ao início\n'
-        'Digite sua opção aqui: ')
+        '\nDigite sua opção aqui: ')
         if opção == '1':
             print("Foi um prazer ajudar!")
             exit()
@@ -105,12 +106,12 @@ def f_imob():
 
 def  f_condições():
     while True:
-        print('CONDIÇÕES DE EMPRÉSTIMO: Para fazer um empréstimo você precisa ser maior de 18 anos, ter documentos pessoais válidos,\n'
-        'como RG e CPF, e apresentar comprovante de renda e de residência\n')
-        opção = input('Digite 1 para sair ou 2 para retornar ao início.\n'
+        print('\n Para fazer um financiamento você precisa ser maior de 18 anos, ter documentos pessoais válidos (como RG e CPF)\n'
+        ' e apresentar comprovante de renda e de residência\n')
+        opção = input(
         '1 - Sair\n'
         '2 - Retornar ao início\n'
-        'Digite sua opção aqui: ')
+        '\nDigite sua opção aqui: ')
         if opção == '1':
             return saida_fin()
         else:
@@ -127,22 +128,23 @@ def saida_fin():
 
 def emprestimo():
     while True:
-        print(' Seja bem vindo ao menu de Emprestimos, no que podemos ajudar hoje? ')
-        print('1) Empréstimo Consignado ')
+        print('Seja bem vindo ao menu de Empréstimos, no que podemos ajudar hoje?'.center(130, '-'))
+        print('\n1) Empréstimo Consignado ')
         print('2) Empréstimo Estudantil ')
         print('3) Condições de Emprestimo ')
         print('4) Voltar ao menu anterior ' )
-        opcao=int(input('Digite a opção desejada: '))
+        opcao=int(input('\nDigite a opção desejada: '))
         if opcao == 1:
-            print('Ao solicitar o empréstimo consignado você recebe o valor solicitado\n e terá as parcelas cobradas direto na folha de pagamento,\n o desconto é feito diretamente no salário ou na aposentadoria.')
+            print('\n Ao solicitar o empréstimo consignado você recebe o valor solicitado e terá as parcelas cobradas direto na folha de pagamento.\n O desconto é feito diretamente no salário ou na aposentadoria.\n')
             saida_emp()
         if opcao == 2:
-            print('Ao solicitar o empréstimo estudantil\n você terá o valor total para pagar os estudos e a cobrança é feita de forma\n parcelada de acordo com as cláusulas do contrato.')   
+            print('\n Ao solicitar o empréstimo estudantil, você terá o valor total para pagar os estudos e a cobrança é feita de forma parcelada,\n de acordo com as cláusulas do contrato.\n')   
             saida_emp()    
         if opcao == 3:
-            print('Para fazer um empréstimo você, \nprecisa ser maior de 18 anos, ter documentos pessoais válidos, \ncomo RG e CPF e apresentar comprovante de renda  e de residência.' )
+            print('\n Para fazer um empréstimo você precisa ser maior de 18 anos, ter documentos pessoais válidos \n (como RG e CPF) e apresentar comprovante de renda e de residência.\n')
             saida_emp()  
         else:
+            False
             break
           
 
