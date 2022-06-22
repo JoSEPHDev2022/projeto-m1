@@ -1,4 +1,4 @@
-
+# BENEFÍCIOS - JANAYNA
 def saida_ben():
     o1 = str(input('Para voltar ao menu anterior digite: "voltar"\nPara sair do sistema digite: "sair"\n'))
     if o1 == 'voltar':
@@ -26,7 +26,8 @@ def beneficios():
             saida_ben()
         else: 
             break
-
+#==================================================================================================================================================================================================#
+# FALE CONOSCO - JOSÉ LUIZ
 def fale_conosco():
     while True:
         print('Sessão Fale Conosco. No que posso ajudar?'.center(130, '-'))
@@ -57,7 +58,8 @@ def fale_conosco():
                 exit()
             elif opcoes_saida == 2:
                 break
-
+#======================================================================================================================================================================================================#
+# FINANCIAMENTOS - DAVID
 def financiamentos():
     while True:
         print('Você escolheu a opção de Financiamento. O que deseja?'.center(130, '-'))
@@ -124,8 +126,8 @@ def saida_fin():
     if opcao1== 'sair':
         print("Foi um prazer ajudar!")
         exit()
-    
-
+#================================================================================================================================================================================================#
+# EMPRÉSTIMOS - ISA
 def emprestimo():
     while True:
         print('Seja bem vindo ao menu de Empréstimos, no que podemos ajudar hoje?'.center(130, '-'))
@@ -155,4 +157,3 @@ def saida_emp():
     elif opcao1 == 'sair':
         print('Foi um prazer ajudar!')
         exit()
-          
