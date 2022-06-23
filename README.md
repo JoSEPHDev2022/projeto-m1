@@ -8,10 +8,10 @@ O script para esses setores estão presentes no arquivo "setores_financeiros.py"
 * Funções;
 * Função import.
 
-Um agradecimento especial para os colaboradores e amigos que participaram do desenvovlimento do bot, sem vocês não teria sido fácil nem divertido:
+Um agradecimento especial para os colaboradores e amigos que participaram do desenvolvimento do bot, sem vocês não teria sido fácil nem divertido:
 
-**Janayna de S., David L. e Isa C.**
+* **Janayna de S., David L. e Isa C.**
 
 Muito obrigado também pelo apoio, ensinamentos e aulas de nossos facilitadores:
 
-**Lee Q. e Marisa do C.**
+* **Lee Q. e Marisa do C.**
