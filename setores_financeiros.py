@@ -25,13 +25,8 @@ def beneficios():
             print('\n Para os amantes de cashback, nós temos sim! Cadastre seu cpf e utilize nas compras das empresas parceiras e aproveite!\n')
             saida_ben()  
         else:            
-            break        
-
-# Aqui e na func de emprestimos tem um bug idêntico acontecendo, só nesse terceiro if nas duas, onde o usuário tem que "retornar" duas vezes pra poder sair do menu de beneficios e 
-# emprestimos , onde nos outros dois if's, isso não ocorro e o usuário só precisa "retornar" uma vez.
-
-# Tentei usar uma combinação de ifs e elifs, só elifs e outras coisas porém não consegui resolver o bug, qualquer mudança q eu faço só deixa o essas duas partes das funções mais
-# instável, então prefiro apenas um bug do que vários por agora..
+            break
+        break
 #==================================================================================================================================================================================================#
 # FALE CONOSCO - JOSÉ LUIZ
 def fale_conosco():
@@ -152,8 +147,8 @@ def emprestimo():
             print('\n Para fazer um empréstimo você precisa ser maior de 18 anos, ter documentos pessoais válidos \n (como RG e CPF) e apresentar comprovante de renda e de residência.\n')
             saida_emp()  
         else:
-            False
             break
+        break
           
 
 def saida_emp():
